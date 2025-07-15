@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Businesses – SasTown Hub</title>  <!-- SEO Meta Tags -->  <meta name="description" content="Find businesses in Sasolburg – from salons to supermarkets, fast food, and more. Support local!" />
+  <meta name="keywords" content="Sasolburg, SasTown, Zamdela, Kasi businesses, salons, car wash, fast food, butchery, tuckshops, tyre shops, hardware, laundry, cellphone repair, photographers, funeral services" />
+  <meta name="author" content="Kabelo Moloi" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="SasTown Hub – Local Businesses" />
+  <meta property="og:description" content="Explore local businesses in Sasolburg across multiple categories." />
+  <meta property="og:image" content="https://yourdomain.com/images/logo-icon.png" />
+  <meta property="og:url" content="https://your-github-username.github.io/sastown-hub/businesses.html" />
+  <meta name="twitter:card" content="summary_large_image" />  <!-- Favicon -->  <link rel="icon" href="images/logo-icon.png" type="image/png" />  <!-- Bootstrap + FontAwesome -->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />  <style>
+    body {
+      transition: all 0.3s ease;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .category-card {
+      transition: transform 0.3s ease;
+    }
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+  </style></head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand" href="index.html">SasTown Hub</a>
+    <div class="ms-auto d-flex align-items-center">
+      <span class="me-3 toggle-btn text-light" onclick="toggleMode()">
+        <i class="fas fa-adjust"></i> Mode
+      </span>
+    </div>
+  </nav>  <!-- Page Header -->  <header class="text-center py-4">
+    <h1 class="fw-bold">Local Businesses</h1>
+    <p class="text-muted">Explore categorized businesses around Sasolburg</p>
+  </header>  <!-- Business Category Cards -->  <section class="container py-4">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-4"><a href="salon.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-cut fa-2x mb-2"></i><h5>Salons & Barbers</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="spaza.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-store fa-2x mb-2"></i><h5>Spaza & Supermarkets</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="fastfood.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-hamburger fa-2x mb-2"></i><h5>Fast Food</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="butcheries.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-drumstick-bite fa-2x mb-2"></i><h5>Butcheries</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="carwash.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-water fa-2x mb-2"></i><h5>Car Washes</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="catering.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-concierge-bell fa-2x mb-2"></i><h5>Catering</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="taverns.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-fire fa-2x mb-2"></i><h5>Taverns & Clubs</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="funeral.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-briefcase fa-2x mb-2"></i><h5>Funeral Parlors</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="tyreshop.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-bolt fa-2x mb-2"></i><h5>Tyre & Auto Shops</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="hardware.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-tools fa-2x mb-2"></i><h5>Hardware Stores</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="fashion.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-tshirt fa-2x mb-2"></i><h5>Tailors & Fashion</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="laundry.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-soap fa-2x mb-2"></i><h5>Laundromats</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="cellphones.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-mobile-alt fa-2x mb-2"></i><h5>Cellphone Shops</h5></div></a></div>
+      <div class="col-6 col-md-4"><a href="photographers.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-camera fa-2x mb-2"></i><h5>Photographers</h5></div></a></div>
+    </div>
+  </section>  <!-- Footer -->  <footer class="text-center mt-5 py-4 bg-dark text-light">
+    <div class="container">
+      <p class="mb-2">© 2025 SasTown Hub | Built by Kabelo Moloi</p>
+      <div>
+        <a href="https://wa.me/+27787280069" target="_blank" class="text-success text-decoration-none me-4">
+          <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+        <a href="https://instagram.com/kmoloi8" target="_blank" class="text-light text-decoration-none">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </footer>  <!-- JS -->  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script></body>
+</html>

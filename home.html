@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SasTown Hub – Home</title>
+  <meta name="description" content="SasTown Hub is a digital plug for Sasolburg – find businesses, talent, taxi fares, schools, and public info." />
+  <meta name="keywords" content="Sasolburg, Zamdela, SasTown, kasi directory, taxi fares, taxi price, local businesses, Sasolburg talent, funerals, car wash, barbershop, salon,Sasolburg catering,catering, tutors" />
+  <meta name="author" content="Kabelo Moloi" />
+  <meta name="robots" content="index, follow" />
+  
+<link rel="icon" href="images/icon.jpg" type="image/jpg" />
+  <title>SasTown Hub – Sasolburg’s Digital Plug 🔌</title>
+
+  <link rel="canonical" href="https://kmoloi8.github.io/sastownhub/" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-XxDF8Ma2tq6G0Vkf1SPqlS...Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --light-bg: #ffffff;
+      --light-text: #111111;
+      --dark-bg: #121212;
+      --dark-text: #ffffff;
+      --primary: #007bff;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: var(--light-text);
+      transition: all 0.3s ease;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body.dark-mode {
+      background-color: var(--dark-bg);
+      color: var(--dark-text);
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .hero {
+      padding: 100px 20px 60px;
+      text-align: center;
+      background-color: #FFC107; /* Warm Yellow */
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeInText 2s ease-in-out;
+    }
+
+    .category-card {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.5s ease;
+    }
+
+    .category-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .grid-container {
+      padding: 60px 15px;
+    }
+
+  .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  background-color: #ffffff;
+}
+
+.whatsapp-icon {
+  line-height: 1;
+}
+
+    .toggle-btn {
+      cursor: pointer;
+    }
+
+    .add-btn {
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 10px 25px;
+      font-weight: bold;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+<nav class="navbar navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="index.html">SasTown Hub</a>
+  <div class="ms-auto d-flex align-items-center">
+    <a href="contact.html" class="text-light text-decoration-none me-4">Kabelo</a>
+    <span class="text-light toggle-btn" onclick="document.body.classList.toggle('dark-mode')">
+      <i class="fas fa-adjust"></i> Mode
+    </span>
+  </div>
+</nav>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Sasolburg’s Digital Plug 🔌</h1>
+    <p class="lead">Connecting Kasi Businesses, Talent, and Info — All in One Place</p>
+    <a href="add.html" class="btn btn-danger add-btn">+ Add My Business</a>
+  </section>
+
+  <!-- Categories Grid -->
+  <section class="grid-container container" id="categories">
+  <div class="row g-4 text-center">
+
+    <div class="col-6 col-md-4 category-card">
+      <a href="businesses.html" class="text-decoration-none text-dark">
+        <div class="card p-3">
+          <i class="fas fa-store fa-2x mb-2"></i>
+          <h5>Businesses</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 category-card">
+      <a href="talent.html" class="text-decoration-none text-dark">
+        <div class="card p-3">
+          <i class="fas fa-music fa-2x mb-2"></i>
+          <h5>Talent</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 category-card">
+      <a href="taxi.html" class="text-decoration-none text-dark">
+        <div class="card p-3">
+          <i class="fas fa-taxi fa-2x mb-2"></i>
+          <h5>Taxi Prices</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 category-card">
+      <a href="schools.html" class="text-decoration-none text-dark">
+        <div class="card p-3">
+          <i class="fas fa-school fa-2x mb-2"></i>
+          <h5>Schools</h5>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-4 category-card">
+      <a href="places.html" class="text-decoration-none text-dark">
+        <div class="card p-3">
+          <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+          <h5>Public Places</h5>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/+27787280069" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+<!-- Footer -->
+<footer class="text-center mt-5 py-4 bg-dark text-light">
+  <div class="container">
+    <p class="mb-2">© 2025 SasTown Hub | Built by Kabelo Moloi</p>
+    <div>
+      <a href="https://wa.me/+27787280069" target="_blank" class="text-success text-decoration-none me-4">
+        <i class="fab fa-whatsapp fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/kmoloi8" target="_blank" class="text-light text-decoration-none">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scroll & Fade Logic -->
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    // Fade-in effect for cards
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.category-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+
+</body>
+</html>

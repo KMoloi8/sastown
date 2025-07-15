@@ -1,0 +1,58 @@
+<!-- SCHOOLS.HTML (With Dummy Info) --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasolburg Schools – SasTown Hub</title>
+  <meta name="description" content="Discover local primary and high schools in Sasolburg." />
+  <meta name="keywords" content="schools, education, Sasolburg, Zamdela, high school, primary" />
+  <meta name="author" content="Kabelo Moloi" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; transition: 0.3s ease; }
+    body.dark-mode { background-color: #121212; color: #fff; }
+    .navbar { position: sticky; top: 0; z-index: 1000; }
+    .section-title { margin-top: 40px; margin-bottom: 15px; }
+    .school-table th { background-color: #007bff; color: white; }
+    .dark-mode .school-table th { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="index.html">SasTown Hub</a>
+  <span class="text-light ms-auto" onclick="document.body.classList.toggle('dark-mode')">
+    <i class="fas fa-adjust"></i> Mode
+  </span>
+</nav>
+<header class="text-center py-4">
+  <h1 class="fw-bold">Sasolburg Schools</h1>
+  <p class="text-muted">Preview of some schools in the area 🏫</p>
+</header>
+<section class="container pb-5">  <!-- Secondary Schools -->  <h3 class="section-title">📘 Secondary Schools</h3>
+  <table class="table table-bordered table-hover school-table">
+    <thead>
+      <tr><th>School Name</th><th>Location</th><th>Contact</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Example High School</td><td>Sasolburg</td><td>016 000 1234</td></tr>
+      <tr><td>Unity Secondary</td><td>Zamdela</td><td>016 111 5678</td></tr>
+    </tbody>
+  </table>  <!-- Primary Schools -->  <h3 class="section-title">📗 Primary Schools</h3>
+  <table class="table table-bordered table-hover school-table">
+    <thead>
+      <tr><th>School Name</th><th>Location</th><th>Contact</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Sunrise Primary</td><td>Zamdela</td><td>016 222 3344</td></tr>
+      <tr><td>Hope Primary</td><td>Sasolburg</td><td>016 333 4455</td></tr>
+    </tbody>
+  </table>  <div class="mt-4">
+    <p class="text-muted small">⚠️ Note: This is a preview. Official school details will be confirmed after obtaining permission.</p>
+  </div></section>
+<footer class="text-center bg-dark text-light py-4">
+  <p class="mb-1">© 2025 SasTown Hub | Kabelo Moloi</p>
+  <a href="https://wa.me/+27787280069" class="text-success me-3"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://instagram.com/kmoloi8" class="text-light"><i class="fab fa-instagram"></i></a>
+</footer>
+</body>
+</html>
