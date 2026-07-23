@@ -14,10 +14,13 @@
     .card-img-top { height: 200px; object-fit: cover; }
     .navbar { position: sticky; top: 0; z-index: 1000; }
     .social-icons a { margin-right: 10px; font-size: 1.2rem; }
+  
+    body { min-height: 100vh; display: flex; flex-direction: column; margin: 0; }
+    footer { margin-top: auto !important; }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark px-3">
+<nav class="navbar navbar-dark px-3" style="background-color:#000;">
   <a class="navbar-brand" href="index.html">SasTown Hub</a>
   <span class="text-light ms-auto" onclick="document.body.classList.toggle('dark-mode')">
     <i class="fas fa-adjust"></i> Mode
@@ -74,10 +77,10 @@
     </div>
   </div>
 </section>
-<footer class="text-center bg-dark text-light py-4">
-  <p class="mb-1">© 2025 SasTown Hub | Kabelo Moloi</p>
+<footer class="text-center text-light py-4" style="background-color:#000;">
+  <p class="mb-1">© 2026 SasTown Hub | <a href="https://aethelst8.com/" target="_blank" style="color:inherit;">ÆthelSt8</a>. All Rights Reserved.</p>
   <a href="https://wa.me/27XXXXXXXXX" class="text-success me-3"><i class="fab fa-whatsapp"></i></a>
-  <a href="https://instagram.com/kmoloi8" class="text-light"><i class="fab fa-instagram"></i></a>
+  <a href="https://instagram.com/kmoloi8" class="text-light"><i class="fab fa-instagram"></i></a> <a href="https://x.com/aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-x-twitter"></i></a> <a href="https://www.linkedin.com/company/aethelst8/" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-linkedin"></i></a> <a href="https://www.producthunt.com/@aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-product-hunt"></i></a>
 </footer>
 </body>
 </html>

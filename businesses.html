@@ -31,10 +31,13 @@
     .category-card:hover {
       transform: translateY(-5px);
     }
+  
+    body { min-height: 100vh; display: flex; flex-direction: column; margin: 0; }
+    footer { margin-top: auto !important; }
   </style></head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <nav class="navbar navbar-expand-lg navbar-dark px-3" style="background-color:#000;">
     <a class="navbar-brand" href="index.html">SasTown Hub</a>
     <div class="ms-auto d-flex align-items-center">
       <span class="me-3 toggle-btn text-light" onclick="toggleMode()">
@@ -82,16 +85,16 @@
       
       <div class="col-6 col-md-4"><a href="businesses.html" class="text-decoration-none text-dark"><div class="card p-3 category-card"><i class="fas fa-soap fa-2x mb-2"></i><h5>Laundromats</h5></div></a></div>
     </div>
-  </section>  <!-- Footer -->  <footer class="text-center mt-5 py-4 bg-dark text-light">
+  </section>  <!-- Footer -->  <footer class="text-center py-4 text-light" style="background-color:#000;">
     <div class="container">
-      <p class="mb-2">© 2025 SasTown Hub | Built by Kabelo Moloi</p>
+      <p class="mb-2">© 2026 SasTown Hub | <a href="https://aethelst8.com/" target="_blank" style="color:inherit;">ÆthelSt8</a>. All Rights Reserved.</p>
       <div>
         <a href="https://wa.me/+27787280069" target="_blank" class="text-success text-decoration-none me-4">
           <i class="fab fa-whatsapp fa-lg"></i>
         </a>
         <a href="https://instagram.com/kmoloi8" target="_blank" class="text-light text-decoration-none">
           <i class="fab fa-instagram fa-lg"></i>
-        </a>
+        </a> <a href="https://x.com/aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-x-twitter"></i></a> <a href="https://www.linkedin.com/company/aethelst8/" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-linkedin"></i></a> <a href="https://www.producthunt.com/@aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-product-hunt"></i></a>
       </div>
     </div>
   </footer>  <!-- JS -->  <script>
