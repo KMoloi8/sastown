@@ -56,7 +56,12 @@
     }
 
     .hero {
-      padding: 100px 20px 60px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 20px 40px;
       text-align: center;
       background-color: #FFC107; /* Warm Yellow */
       color: #fff;
@@ -67,19 +72,12 @@
       animation: fadeInText 2s ease-in-out;
     }
 
-    .category-card {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.5s ease;
-    }
-
-    .category-card.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .grid-container {
-      padding: 60px 15px;
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
     }
 
   .whatsapp-float {
@@ -139,8 +137,14 @@
   <!-- Hero Banner -->
   <section class="hero">
     <h1>Sasolburg’s Digital Plug 🔌</h1>
-    <p class="lead">Connecting Kasi Businesses, Talent, and Info — All in One Place</p>
-    <a href="add.html" class="btn btn-danger add-btn">+ Add My Business</a>
+    <p class="lead">Connecting Kasi Businesses, Talent, and Info, All in One Place</p>
+    <div class="hero-buttons">
+      <a href="https://sastownhub.azurewebsites.net/listing/submit" class="btn btn-danger add-btn">+ Add My Business</a>
+      <a href="javascript:void(0)" class="btn btn-outline-light add-btn disabled" aria-disabled="true">
+        <i class="fab fa-google-play"></i> Get the App, Coming Soon
+      </a>
+      <a href="https://sastownhub.azurewebsites.net/" class="btn btn-dark add-btn">Browse</a>
+    </div>
   </section>
 
   <!-- <section class="container my-5"> -->
@@ -172,58 +176,6 @@
   <!-- </div> -->
 <!-- </section> -->
 
-  
-  <!-- Categories Grid -->
-  <section class="grid-container container" id="categories">
-  <div class="row g-4 text-center">
-
-    <div class="col-6 col-md-4 category-card">
-      <a href="businesses.html" class="text-decoration-none text-dark">
-        <div class="card p-3">
-          <i class="fas fa-store fa-2x mb-2"></i>
-          <h5>Businesses</h5>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-6 col-md-4 category-card">
-      <a href="talent.html" class="text-decoration-none text-dark">
-        <div class="card p-3">
-          <i class="fas fa-music fa-2x mb-2"></i>
-          <h5>Talent</h5>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-6 col-md-4 category-card">
-      <a href="taxi.html" class="text-decoration-none text-dark">
-        <div class="card p-3">
-          <i class="fas fa-taxi fa-2x mb-2"></i>
-          <h5>Taxi Prices</h5>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-6 col-md-4 category-card">
-      <a href="schools.html" class="text-decoration-none text-dark">
-        <div class="card p-3">
-          <i class="fas fa-school fa-2x mb-2"></i>
-          <h5>Schools</h5>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-6 col-md-4 category-card">
-      <a href="places.html" class="text-decoration-none text-dark">
-        <div class="card p-3">
-          <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
-          <h5>Public Places</h5>
-        </div>
-      </a>
-    </div>
-
-  </div>
-</section>
   <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/+27787280069" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp whatsapp-icon"></i>
@@ -245,24 +197,11 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Scroll & Fade Logic -->
+  <!-- Dark mode toggle -->
   <script>
     function toggleMode() {
       document.body.classList.toggle('dark-mode');
     }
-
-    // Fade-in effect for cards
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    });
-
-    document.querySelectorAll('.category-card').forEach(card => {
-      observer.observe(card);
-    });
   </script>
 
 </body>
