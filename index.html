@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SasTown Hub – Home</title>
-  <meta name="description" content="SasTown Hub is a digital plug for Sasolburg – find businesses, talent, taxi fares, schools, and public info." />
-  <meta name="keywords" content="Sasolburg, Zamdela, SasTown, kasi directory, taxi fares, taxi price, local businesses, Sasolburg talent, funerals, car wash, barbershop, salon,Sasolburg catering,catering, tutors" />
+  <title>SasTown Hub – Sasolburg's Digital Plug 🔌</title>
+  <meta name="description" content="SasTown Hub has moved! Find Sasolburg's businesses, talent, taxi fares, schools, and public info at our new site." />
   <meta name="author" content="Kabelo Moloi" />
   <meta name="robots" content="index, follow" />
-  
-<link rel="icon" href="logo192.png" type="image/png" />
+  <link rel="icon" href="logo192.png" type="image/png" />
+  <link rel="canonical" href="https://sastownhub.co.za/" />
+  <meta http-equiv="refresh" content="4;url=https://sastownhub.azurewebsites.net/" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -22,190 +22,95 @@
   ]
 }
   </script>
-  <title>SasTown Hub – Sasolburg’s Digital Plug 🔌</title>
-
-  <link rel="canonical" href="https://kmoloi8.github.io/sastownhub/" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-XxDF8Ma2tq6G0Vkf1SPqlS...Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    :root {
-      --light-bg: #ffffff;
-      --light-text: #111111;
-      --dark-bg: #121212;
-      --dark-text: #ffffff;
-      --primary: #007bff;
-    }
-
     body {
-      background-color: var(--light-bg);
-      color: var(--light-text);
-      transition: all 0.3s ease;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
     }
 
-    body.dark-mode {
-      background-color: var(--dark-bg);
-      color: var(--dark-text);
-    }
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-    }
-
     .hero {
-      min-height: 100vh;
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 100px 20px 40px;
       text-align: center;
-      background-color: #FFC107; /* Warm Yellow */
+      background-color: #FFC107;
       color: #fff;
     }
 
     .hero h1 {
-      font-size: 3rem;
-      animation: fadeInText 2s ease-in-out;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-  .whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.whatsapp-float:hover {
-  background-color: #ffffff;
-}
-
-.whatsapp-icon {
-  line-height: 1;
-}
-
-    .toggle-btn {
-      cursor: pointer;
-    }
-
-    .add-btn {
-      margin-top: 20px;
-      font-size: 18px;
-      padding: 10px 25px;
+      font-size: 2.5rem;
       font-weight: bold;
     }
 
-    @keyframes fadeInText {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale(1); }
+    .moved-btn {
+      margin-top: 25px;
+      font-size: 18px;
+      padding: 10px 30px;
+      font-weight: bold;
     }
-  
-    body { min-height: 100vh; display: flex; flex-direction: column; margin: 0; }
-    footer { margin-top: auto !important; }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #ffffff;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Top Navbar -->
-<nav class="navbar navbar-dark px-3" style="background-color:#000;">
-  <a class="navbar-brand" href="index.html">SasTown Hub</a>
-  <div class="ms-auto d-flex align-items-center">
-    <a href="contact.html" class="text-light text-decoration-none me-4">Kabelo</a>
-    <span class="text-light toggle-btn" onclick="document.body.classList.toggle('dark-mode')">
-      <i class="fas fa-adjust"></i> Mode
-    </span>
-  </div>
-</nav>
+  <nav class="navbar navbar-dark px-3" style="background-color:#000;">
+    <a class="navbar-brand" href="https://sastownhub.azurewebsites.net/">SasTown Hub</a>
+  </nav>
 
-  <!-- Hero Banner -->
   <section class="hero">
-    <h1>Sasolburg’s Digital Plug 🔌</h1>
-    <p class="lead">Connecting Kasi Businesses, Talent, and Info, All in One Place</p>
-    <div class="hero-buttons">
-      <a href="https://sastownhub.azurewebsites.net/listing/submit" class="btn btn-danger add-btn">+ Add My Business</a>
-      <a href="javascript:void(0)" class="btn btn-outline-light add-btn disabled" aria-disabled="true">
-        <i class="fab fa-google-play"></i> Get the App, Coming Soon
-      </a>
-      <a href="https://sastownhub.azurewebsites.net/" class="btn btn-dark add-btn">Browse</a>
-    </div>
+    <h1>SasTown Hub has moved! 🔌</h1>
+    <p class="lead">We've relaunched at our new home - taking you there now&hellip;</p>
+    <a href="https://sastownhub.azurewebsites.net/" class="btn btn-dark moved-btn">Continue to SasTown Hub</a>
+    <p class="mt-3"><small>Not redirected automatically? <a href="https://sastownhub.azurewebsites.net/" style="color:#000;text-decoration:underline;">Click here</a>.</small></p>
   </section>
 
-  <!-- <section class="container my-5"> -->
-  <!-- <div class="card shadow-lg border-0" style="background-color: #FFE5B4;"> -->
-    <!-- <div class="d-flex align-items-center flex-row" style="flex-wrap: nowrap;"> -->
-      
-      <!-- <!-- Image always left --> 
-      <!-- <div style="flex: 0 0 150px; max-width: 150px;"> -->
-        <!-- <img src="ocean.jpg"  -->
-             <!-- alt="New Music Release"  -->
-             <!-- style="width: 100%; height: auto; border-radius: 8px;"> -->
-      <!-- </div> -->
-
-      <!-- <!-- Text always right --> 
-      <!-- <div class="card-body" style="flex: 1;"> -->
-        <!-- <h3 class="card-title fw-bold text-primary">🎶 New Music from Sasolburg!</h3> -->
-        <!-- <p class="card-text mb-3"> -->
-          <!-- <strong>Ungabatjeli</strong> just dropped his debut single on  -->
-          <!-- <strong>17 August 2025</strong>.   -->
-          <!-- Don’t miss out on the sound straight out of Sasolburg! 🔥 -->
-        <!-- </p> -->
-        <!-- <a href="https://youtu.be/aklOOTGBcBg?si=tv0Ij81c525DCuXN"  -->
-           <!-- target="_blank"  -->
-           <!-- class="btn btn-danger btn-lg"> -->
-          <!-- 🎧 Watch on YouTube -->
-        <!-- </a> -->
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </section> -->
-
-  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/+27787280069" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp whatsapp-icon"></i>
+    <i class="fab fa-whatsapp"></i>
   </a>
-<!-- Footer -->
-<footer class="text-center py-4 text-light" style="background-color:#000;">
-  <div class="container">
-    <p class="mb-2">© 2026 SasTown Hub | <a href="https://aethelst8.com/" target="_blank" style="color:inherit;">ÆthelSt8</a>. All Rights Reserved.</p>
-    <div>
-      <a href="https://wa.me/+27787280069" target="_blank" class="text-success text-decoration-none me-4">
-        <i class="fab fa-whatsapp fa-whatsapp"></i>
-      </a>
-      <a href="https://instagram.com/kmoloi8" target="_blank" class="text-light text-decoration-none">
-        <i class="fab fa-instagram fa-lg"></i>
-      </a> <a href="https://x.com/aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-x-twitter"></i></a> <a href="https://www.linkedin.com/company/aethelst8/" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-linkedin"></i></a> <a href="https://www.producthunt.com/@aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-product-hunt"></i></a>
-    </div>
-  </div>
-</footer>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Dark mode toggle -->
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
+  <footer class="text-center py-4 text-light" style="background-color:#000;">
+    <div class="container">
+      <p class="mb-2">© 2026 SasTown Hub | <a href="https://aethelst8.com/" target="_blank" style="color:inherit;">ÆthelSt8</a>. All Rights Reserved.</p>
+      <div>
+        <a href="https://wa.me/+27787280069" target="_blank" class="text-success text-decoration-none me-4">
+          <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+        <a href="https://instagram.com/kmoloi8" target="_blank" class="text-light text-decoration-none">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://x.com/aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/aethelst8/" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.producthunt.com/@aethelst8" target="_blank" class="text-light text-decoration-none ms-3"><i class="fab fa-product-hunt"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
